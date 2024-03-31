@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Vibes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b3e0ff;
+            background-image: url('https://source.unsplash.com/1600x900/?beach');
+            background-size: cover;
+            background-position: center;
+            color: #333333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .content h2 {
+            color: #0077cc;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            color: #666666;
+            font-size: 1.2em;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>Beach Fun</h2>
+            <p>Enjoy the sun, sand, and waves!</p>
+        </div>
+
+        <div class="content">
+            <h2>Surfing Adventure</h2>
+            <p>Ride the waves and feel the thrill.</p>
+        </div>
+
+        <div class="content">
+            <h2>Beachside Relaxation</h2>
+            <p>Unwind and soak up the serenity of the beach.</p>
+        </div>
+
+        <div class="content">
+            <h2>Seashell Hunting</h2>
+            <p>Search for treasures along the shoreline.</p>
+        </div>
+
+        <div class="content">
+            <h2>Sunset Bliss</h2>
+            <p>Watch the sun dip below the horizon, painting the sky with vibrant colors.</p>
+        </div>
+    </div>
+</body>
+</html>
